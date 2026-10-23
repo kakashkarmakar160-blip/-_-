@@ -48,3 +48,12 @@
 - দশকর্মা ও অন্যান্য দায়িত্ব তালিকায় তারিখ, সদস্যের নাম ও দায়িত্ব দেখা যায়।
 - অন্যান্য আয় ও খরচ তালিকায় তারিখ, কোথা থেকে এসেছে/কে দিয়েছে এবং টাকার পরিমাণ/বিবরণ দেখা যায়।
 - অ্যাডমিন লগইন থাকলে প্রতিটি রেকর্ডের পাশে এডিট বোতাম দেখা যায়; ফর্মে পরিবর্তন করে সংরক্ষণ করা যায়।
+
+## Bug fixes in this revision
+- Member dues category now uses explicit category classification and keeps exactly three visible columns: member name, date, and dues. Admin edit controls are placed inside the dues cell so they do not create a fourth column.
+- New accounting records include a category selector so member dues can be saved as member dues rather than duties/other expenses.
+- Neighborhood contribution edit controls are bound after the list is rendered; the add/edit forms include working cancel controls.
+- Add-transaction and gallery-upload forms include cancel controls.
+- Member login IDs can be edited by an admin from Settings → Member management → Edit member. New/updated IDs must be exactly 10 digits (mobile number). Existing demo IDs need to be changed to mobile numbers before they can be saved in the member editor.
+
+Note: this remains a localStorage demo build; Supabase sync is not yet integrated.
