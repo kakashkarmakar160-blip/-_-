@@ -1,0 +1,1514 @@
+{
+  "settings": {
+    "name": "দুর্গা সমিতি",
+    "motto": "মা দুর্গার আশীর্বাদে ঐক্য, সেবা ও সম্প্রীতি",
+    "logo": "assets/durga-samiti-logo.png",
+    "footer": "দুর্গা সমিতি • ঐক্য ও সেবায়",
+    "theme": "cream",
+    "groupName": "দুর্গা সমিতি — গ্রুপ চ্যাট"
+  },
+  "members": [
+    {
+      "name": "আকাশ কর্মকার",
+      "id": "DUR@900",
+      "password": "password",
+      "role": "অ্যাডমিন",
+      "dob": "",
+      "dues": 500,
+      "active": true,
+      "address": "",
+      "photo": "",
+      "admin": true
+    },
+    {
+      "name": "সায়ন কোলে",
+      "id": "DUR002",
+      "password": "Durga@1002",
+      "role": "সদস্য",
+      "dob": "",
+      "dues": 350,
+      "active": true,
+      "address": "",
+      "photo": "assets/member-sayan.jpg",
+      "admin": false
+    },
+    {
+      "name": "স্বস্তিক কর্মকার",
+      "id": "DUR003",
+      "password": "Durga@1003",
+      "role": "সদস্য",
+      "dob": "",
+      "dues": 350,
+      "active": true,
+      "address": "",
+      "photo": "assets/member-swastik.jpg",
+      "admin": false
+    },
+    {
+      "name": "হিমাংশু মালিক",
+      "id": "DUR004",
+      "password": "Durga@1004",
+      "role": "সদস্য",
+      "dob": "",
+      "dues": 250,
+      "active": true,
+      "address": "",
+      "photo": "",
+      "admin": false
+    },
+    {
+      "name": "অরিত্র মালিক",
+      "id": "DUR005",
+      "password": "Durga@1005",
+      "role": "সদস্য",
+      "dob": "",
+      "dues": 150,
+      "active": true,
+      "address": "",
+      "photo": "",
+      "admin": false
+    },
+    {
+      "name": "ইন্দ্রজিৎ কর্মকার",
+      "id": "DUR006",
+      "password": "Durga@1006",
+      "role": "সদস্য",
+      "dob": "",
+      "dues": 600,
+      "active": true,
+      "address": "",
+      "photo": "",
+      "admin": false
+    },
+    {
+      "name": "সাঅন দে",
+      "id": "DUR007",
+      "password": "Durga@1007",
+      "role": "সদস্য",
+      "dob": "",
+      "dues": 350,
+      "active": true,
+      "address": "",
+      "photo": "",
+      "admin": false
+    },
+    {
+      "name": "সৌমানলো কুন্ডু",
+      "id": "DUR008",
+      "password": "Durga@1008",
+      "role": "সদস্য",
+      "dob": "",
+      "dues": 200,
+      "active": true,
+      "address": "",
+      "photo": "",
+      "admin": false
+    },
+    {
+      "name": "অস্মিত মালিক",
+      "id": "DUR009",
+      "password": "Durga@1009",
+      "role": "সদস্য",
+      "dob": "",
+      "dues": 100,
+      "active": true,
+      "address": "",
+      "photo": "",
+      "admin": false
+    },
+    {
+      "name": "ইন্দ্রনীল কারক",
+      "id": "DUR010",
+      "password": "Durga@1010",
+      "role": "সদস্য",
+      "dob": "",
+      "dues": 400,
+      "active": true,
+      "address": "",
+      "photo": "",
+      "admin": false
+    }
+  ],
+  "gallery": [
+    {
+      "id": 1,
+      "name": "দুর্গা পূজার স্মৃতি",
+      "description": "সমিতির স্মৃতিচারণ",
+      "type": "image",
+      "src": "assets/durga-samiti-logo.png",
+      "visible": true
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "memberId": "DUR@900",
+      "name": "আকাশ কর্মকার",
+      "text": "সবাইকে দুর্গা সমিতির পক্ষ থেকে শুভেচ্ছা।",
+      "time": "2026-10-23T09:00:00.000Z"
+    }
+  ],
+  "transactions": [
+    {
+      "id": 1,
+      "date": "2025-01-01",
+      "year": 2025,
+      "type": "সদস্য চাঁদা",
+      "direction": "income",
+      "amount": 500,
+      "person": "আকাশ কর্মকার",
+      "item": "বার্ষিক সদস্য চাঁদা",
+      "description": "ব্যবহারকারীর দেওয়া নমুনা তথ্য",
+      "responsible": "আকাশ কর্মকার",
+      "comment": ""
+    },
+    {
+      "id": 2,
+      "date": "2025-01-01",
+      "year": 2025,
+      "type": "সদস্য চাঁদা",
+      "direction": "income",
+      "amount": 350,
+      "person": "সায়ন কোলে",
+      "item": "বার্ষিক সদস্য চাঁদা",
+      "description": "ব্যবহারকারীর দেওয়া নমুনা তথ্য",
+      "responsible": "সায়ন কোলে",
+      "comment": ""
+    },
+    {
+      "id": 3,
+      "date": "2025-01-02",
+      "year": 2025,
+      "type": "সদস্য চাঁদা",
+      "direction": "income",
+      "amount": 350,
+      "person": "সস্তিক কর্মকার",
+      "item": "বার্ষিক সদস্য চাঁদা",
+      "description": "ব্যবহারকারীর দেওয়া নমুনা তথ্য",
+      "responsible": "সস্তিক কর্মকার",
+      "comment": ""
+    },
+    {
+      "id": 4,
+      "date": "2025-01-03",
+      "year": 2025,
+      "type": "সদস্য চাঁদা",
+      "direction": "income",
+      "amount": 250,
+      "person": "হিমাংশু মালিক",
+      "item": "বার্ষিক সদস্য চাঁদা",
+      "description": "ব্যবহারকারীর দেওয়া নমুনা তথ্য",
+      "responsible": "হিমাংশু মালিক",
+      "comment": ""
+    },
+    {
+      "id": 5,
+      "date": "2025-01-04",
+      "year": 2025,
+      "type": "সদস্য চাঁদা",
+      "direction": "income",
+      "amount": 150,
+      "person": "অরিত্র মালিক",
+      "item": "বার্ষিক সদস্য চাঁদা",
+      "description": "ব্যবহারকারীর দেওয়া নমুনা তথ্য",
+      "responsible": "অরিত্র মালিক",
+      "comment": ""
+    },
+    {
+      "id": 6,
+      "date": "2025-01-05",
+      "year": 2025,
+      "type": "সদস্য চাঁদা",
+      "direction": "income",
+      "amount": 600,
+      "person": "ইন্দ্রজিৎ কর্মকার",
+      "item": "বার্ষিক সদস্য চাঁদা",
+      "description": "ব্যবহারকারীর দেওয়া নমুনা তথ্য",
+      "responsible": "ইন্দ্রজিৎ কর্মকার",
+      "comment": ""
+    },
+    {
+      "id": 7,
+      "date": "2025-01-06",
+      "year": 2025,
+      "type": "সদস্য চাঁদা",
+      "direction": "income",
+      "amount": 350,
+      "person": "সাঅন দে",
+      "item": "বার্ষিক সদস্য চাঁদা",
+      "description": "ব্যবহারকারীর দেওয়া নমুনা তথ্য",
+      "responsible": "সাঅন দে",
+      "comment": ""
+    },
+    {
+      "id": 8,
+      "date": "2025-01-07",
+      "year": 2025,
+      "type": "সদস্য চাঁদা",
+      "direction": "income",
+      "amount": 200,
+      "person": "সৌমানলো কুন্ডু",
+      "item": "বার্ষিক সদস্য চাঁদা",
+      "description": "ব্যবহারকারীর দেওয়া নমুনা তথ্য",
+      "responsible": "সৌমানলো কুন্ডু",
+      "comment": ""
+    },
+    {
+      "id": 9,
+      "date": "2025-01-08",
+      "year": 2025,
+      "type": "সদস্য চাঁদা",
+      "direction": "income",
+      "amount": 100,
+      "person": "অস্মিত মালিক",
+      "item": "বার্ষিক সদস্য চাঁদা",
+      "description": "ব্যবহারকারীর দেওয়া নমুনা তথ্য",
+      "responsible": "অস্মিত মালিক",
+      "comment": ""
+    },
+    {
+      "id": 10,
+      "date": "2025-01-09",
+      "year": 2025,
+      "type": "সদস্য চাঁদা",
+      "direction": "income",
+      "amount": 400,
+      "person": "ইন্দ্রনীল কারক",
+      "item": "বার্ষিক সদস্য চাঁদা",
+      "description": "ব্যবহারকারীর দেওয়া নমুনা তথ্য",
+      "responsible": "ইন্দ্রনীল কারক",
+      "comment": ""
+    },
+    {
+      "id": 11,
+      "date": "2025-02-05",
+      "year": 2025,
+      "type": "রাস্তা থেকে আয়",
+      "direction": "income",
+      "amount": 400,
+      "person": "রাস্তার সংগ্রহ",
+      "item": "রাস্তা থেকে সংগ্রহ",
+      "description": "ব্যবহারকারীর দেওয়া তথ্য",
+      "responsible": "আকাশ কর্মকার",
+      "comment": ""
+    },
+    {
+      "id": 12,
+      "date": "2025-02-06",
+      "year": 2025,
+      "type": "রাস্তা থেকে আয়",
+      "direction": "income",
+      "amount": 320,
+      "person": "রাস্তার সংগ্রহ",
+      "item": "রাস্তা থেকে সংগ্রহ",
+      "description": "ব্যবহারকারীর দেওয়া তথ্য",
+      "responsible": "আকাশ কর্মকার",
+      "comment": ""
+    },
+    {
+      "id": 13,
+      "date": "2025-02-07",
+      "year": 2025,
+      "type": "রাস্তা থেকে আয়",
+      "direction": "income",
+      "amount": 240,
+      "person": "রাস্তার সংগ্রহ",
+      "item": "রাস্তা থেকে সংগ্রহ",
+      "description": "ব্যবহারকারীর দেওয়া তথ্য",
+      "responsible": "আকাশ কর্মকার",
+      "comment": ""
+    },
+    {
+      "id": 14,
+      "date": "2025-02-08",
+      "year": 2025,
+      "type": "বাইরের অনুদান",
+      "direction": "income",
+      "amount": 2000,
+      "person": "বাইরের দাতা",
+      "item": "বাইরে থেকে অনুদান",
+      "description": "ব্যবহারকারীর দেওয়া তথ্য",
+      "responsible": "আকাশ কর্মকার",
+      "comment": ""
+    },
+    {
+      "id": 15,
+      "date": "2025-02-01",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 20,
+      "person": "রাহুল দাস",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 16,
+      "date": "2025-02-02",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 20,
+      "person": "সুমন দে",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 17,
+      "date": "2025-02-03",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 20,
+      "person": "অর্পণ মণ্ডল",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 18,
+      "date": "2025-02-04",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 20,
+      "person": "শুভম বিশ্বাস",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 19,
+      "date": "2025-02-05",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 20,
+      "person": "তাপস হালদার",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 20,
+      "date": "2025-02-06",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 20,
+      "person": "অভিজিৎ দাস",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 21,
+      "date": "2025-02-07",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 20,
+      "person": "সৌরভ দে",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 22,
+      "date": "2025-02-08",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 20,
+      "person": "কৌশিক মণ্ডল",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 23,
+      "date": "2025-02-09",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 20,
+      "person": "অমিত বিশ্বাস",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 24,
+      "date": "2025-02-10",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 20,
+      "person": "দেবাশিস হালদার",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 25,
+      "date": "2025-02-11",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 20,
+      "person": "সায়ন দাস",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 26,
+      "date": "2025-02-12",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 20,
+      "person": "প্রদীপ দে",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 27,
+      "date": "2025-02-13",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 20,
+      "person": "রাজু মণ্ডল",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 28,
+      "date": "2025-02-14",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 20,
+      "person": "বাপ্পা বিশ্বাস",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 29,
+      "date": "2025-02-15",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 20,
+      "person": "পলাশ হালদার",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 30,
+      "date": "2025-02-16",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 20,
+      "person": "সঞ্জয় দাস",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 31,
+      "date": "2025-02-17",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 20,
+      "person": "মিঠুন দে",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 32,
+      "date": "2025-02-18",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 20,
+      "person": "অনিক মণ্ডল",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 33,
+      "date": "2025-02-19",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 20,
+      "person": "রনি বিশ্বাস",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 34,
+      "date": "2025-02-20",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 20,
+      "person": "সুদীপ হালদার",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 35,
+      "date": "2025-02-21",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 23,
+      "person": "রাহুল দাস",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 36,
+      "date": "2025-02-22",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 23,
+      "person": "সুমন দে",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 37,
+      "date": "2025-02-23",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 23,
+      "person": "অর্পণ মণ্ডল",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 38,
+      "date": "2025-02-24",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 23,
+      "person": "শুভম বিশ্বাস",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 39,
+      "date": "2025-02-25",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 23,
+      "person": "তাপস হালদার",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 40,
+      "date": "2025-02-01",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 23,
+      "person": "অভিজিৎ দাস",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 41,
+      "date": "2025-02-02",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 23,
+      "person": "সৌরভ দে",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 42,
+      "date": "2025-02-03",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 23,
+      "person": "কৌশিক মণ্ডল",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 43,
+      "date": "2025-02-04",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 23,
+      "person": "অমিত বিশ্বাস",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 44,
+      "date": "2025-02-05",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 23,
+      "person": "দেবাশিস হালদার",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 45,
+      "date": "2025-02-06",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 23,
+      "person": "সায়ন দাস",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 46,
+      "date": "2025-02-07",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 23,
+      "person": "প্রদীপ দে",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 47,
+      "date": "2025-02-08",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 23,
+      "person": "রাজু মণ্ডল",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 48,
+      "date": "2025-02-09",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 23,
+      "person": "বাপ্পা বিশ্বাস",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 49,
+      "date": "2025-02-10",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 23,
+      "person": "পলাশ হালদার",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 50,
+      "date": "2025-02-11",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 23,
+      "person": "সঞ্জয় দাস",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 51,
+      "date": "2025-02-12",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 23,
+      "person": "মিঠুন দে",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 52,
+      "date": "2025-02-13",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 23,
+      "person": "অনিক মণ্ডল",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 53,
+      "date": "2025-02-14",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 23,
+      "person": "রনি বিশ্বাস",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 54,
+      "date": "2025-02-15",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 23,
+      "person": "সুদীপ হালদার",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 55,
+      "date": "2025-02-16",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 27,
+      "person": "রাহুল দাস",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 56,
+      "date": "2025-02-17",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 27,
+      "person": "সুমন দে",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 57,
+      "date": "2025-02-18",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 27,
+      "person": "অর্পণ মণ্ডল",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 58,
+      "date": "2025-02-19",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 27,
+      "person": "শুভম বিশ্বাস",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 59,
+      "date": "2025-02-20",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 27,
+      "person": "তাপস হালদার",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 60,
+      "date": "2025-02-21",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 27,
+      "person": "অভিজিৎ দাস",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 61,
+      "date": "2025-02-22",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 27,
+      "person": "সৌরভ দে",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 62,
+      "date": "2025-02-23",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 27,
+      "person": "কৌশিক মণ্ডল",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 63,
+      "date": "2025-02-24",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 27,
+      "person": "অমিত বিশ্বাস",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 64,
+      "date": "2025-02-25",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 27,
+      "person": "দেবাশিস হালদার",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 65,
+      "date": "2025-02-01",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 27,
+      "person": "সায়ন দাস",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 66,
+      "date": "2025-02-02",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 27,
+      "person": "প্রদীপ দে",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 67,
+      "date": "2025-02-03",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 27,
+      "person": "রাজু মণ্ডল",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 68,
+      "date": "2025-02-04",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 27,
+      "person": "বাপ্পা বিশ্বাস",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 69,
+      "date": "2025-02-05",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 27,
+      "person": "পলাশ হালদার",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 70,
+      "date": "2025-02-06",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 27,
+      "person": "সঞ্জয় দাস",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 71,
+      "date": "2025-02-07",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 27,
+      "person": "মিঠুন দে",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 72,
+      "date": "2025-02-08",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 27,
+      "person": "অনিক মণ্ডল",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 73,
+      "date": "2025-02-09",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 27,
+      "person": "রনি বিশ্বাস",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 74,
+      "date": "2025-02-10",
+      "year": 2025,
+      "type": "পাড়া থেকে চাঁদা",
+      "direction": "income",
+      "amount": 27,
+      "person": "সুদীপ হালদার",
+      "item": "পাড়ার নমুনা চাঁদা",
+      "description": "নমুনা ব্যক্তি—মোট ৬০ জন; যোগফল ₹১,৪০০",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 75,
+      "date": "2025-02-05",
+      "year": 2025,
+      "type": "ঠাকুর",
+      "direction": "expense",
+      "amount": 600,
+      "person": "ইন্দ্রজিৎ কর্মকার",
+      "item": "ঠাকুর",
+      "description": "ব্যবহারকারীর দেওয়া তথ্য",
+      "responsible": "ইন্দ্রজিৎ কর্মকার",
+      "comment": ""
+    },
+    {
+      "id": 76,
+      "date": "2025-02-06",
+      "year": 2025,
+      "type": "ঠাকুর মশাই",
+      "direction": "expense",
+      "amount": 150,
+      "person": "অরিত্র মালিক",
+      "item": "ঠাকুর মশাই",
+      "description": "ব্যবহারকারীর দেওয়া তথ্য",
+      "responsible": "অরিত্র মালিক",
+      "comment": ""
+    },
+    {
+      "id": 77,
+      "date": "2025-02-07",
+      "year": 2025,
+      "type": "দশকর্মা",
+      "direction": "expense",
+      "amount": 350,
+      "person": "সাঅন দে",
+      "item": "দশকর্মা সামগ্রী",
+      "description": "ব্যবহারকারীর দেওয়া তথ্য",
+      "responsible": "সাঅন দে",
+      "comment": ""
+    },
+    {
+      "id": 78,
+      "date": "2025-02-08",
+      "year": 2025,
+      "type": "ফুল",
+      "direction": "expense",
+      "amount": 450,
+      "person": "স্বস্তিক কর্মকার ও অস্মিত মালিক",
+      "item": "ফুল",
+      "description": "ব্যবহারকারীর দেওয়া তথ্য",
+      "responsible": "স্বস্তিক কর্মকার ও অস্মিত মালিক",
+      "comment": ""
+    },
+    {
+      "id": 79,
+      "date": "2025-02-09",
+      "year": 2025,
+      "type": "ফল",
+      "direction": "expense",
+      "amount": 250,
+      "person": "হিমাংশু মালিক",
+      "item": "ফল",
+      "description": "ব্যবহারকারীর দেওয়া তথ্য",
+      "responsible": "হিমাংশু মালিক",
+      "comment": ""
+    },
+    {
+      "id": 80,
+      "date": "2025-02-10",
+      "year": 2025,
+      "type": "বক্স ও লাইট",
+      "direction": "expense",
+      "amount": 1500,
+      "person": "ইন্দ্রনীল কারক ও সৌমানলো কুন্ডু",
+      "item": "বক্স এবং লাইট",
+      "description": "ব্যবহারকারীর দেওয়া তথ্য",
+      "responsible": "ইন্দ্রনীল কারক ও সৌমানলো কুন্ডু",
+      "comment": ""
+    },
+    {
+      "id": 81,
+      "date": "2025-02-11",
+      "year": 2025,
+      "type": "প্যান্ডেল",
+      "direction": "expense",
+      "amount": 500,
+      "person": "পাড়া থেকে",
+      "item": "প্যান্ডেল",
+      "description": "ব্যবহারকারীর দেওয়া তথ্য",
+      "responsible": "পাড়া কমিটি",
+      "comment": ""
+    },
+    {
+      "id": 82,
+      "date": "2024-10-01",
+      "year": 2024,
+      "type": "পুরনো বছরের চাঁদা",
+      "direction": "income",
+      "amount": 800,
+      "person": "সদস্যবৃন্দ",
+      "item": "২০২৪ সালের নমুনা চাঁদা",
+      "description": "নমুনা হিসাব",
+      "responsible": "আকাশ কর্মকার",
+      "comment": ""
+    },
+    {
+      "id": 83,
+      "date": "2024-10-05",
+      "year": 2024,
+      "type": "সজ্জা খরচ",
+      "direction": "expense",
+      "amount": 300,
+      "person": "সমিতি",
+      "item": "২০২৪ সালের নমুনা সজ্জা",
+      "description": "নমুনা হিসাব",
+      "responsible": "আকাশ কর্মকার",
+      "comment": ""
+    },
+    {
+      "id": 84,
+      "date": "2026-01-05",
+      "year": 2026,
+      "type": "বার্ষিক চাঁদা",
+      "direction": "income",
+      "amount": 1200,
+      "person": "সদস্যবৃন্দ",
+      "item": "২০২৬ সালের নমুনা চাঁদা",
+      "description": "নমুনা হিসাব",
+      "responsible": "আকাশ কর্মকার",
+      "comment": ""
+    },
+    {
+      "id": 85,
+      "date": "2026-01-10",
+      "year": 2026,
+      "type": "পূজার সামগ্রী",
+      "direction": "expense",
+      "amount": 450,
+      "person": "সমিতি",
+      "item": "২০২৬ সালের নমুনা খরচ",
+      "description": "নমুনা হিসাব",
+      "responsible": "আকাশ কর্মকার",
+      "comment": ""
+    }
+  ],
+  "customFields": [
+    {
+      "name": "রক্তের গ্রুপ",
+      "type": "text",
+      "section": "member",
+      "required": false
+    }
+  ],
+  "years": [
+    2024,
+    2025,
+    2026
+  ],
+  "neighborhoodContributors": [
+    {
+      "name": "রাহুল দাস",
+      "amount": 20
+    },
+    {
+      "name": "সুমন দে",
+      "amount": 20
+    },
+    {
+      "name": "অর্পণ মণ্ডল",
+      "amount": 20
+    },
+    {
+      "name": "শুভম বিশ্বাস",
+      "amount": 20
+    },
+    {
+      "name": "তাপস হালদার",
+      "amount": 20
+    },
+    {
+      "name": "অভিজিৎ দাস",
+      "amount": 20
+    },
+    {
+      "name": "সৌরভ দে",
+      "amount": 20
+    },
+    {
+      "name": "কৌশিক মণ্ডল",
+      "amount": 20
+    },
+    {
+      "name": "অমিত বিশ্বাস",
+      "amount": 20
+    },
+    {
+      "name": "দেবাশিস হালদার",
+      "amount": 20
+    },
+    {
+      "name": "সায়ন দাস",
+      "amount": 20
+    },
+    {
+      "name": "প্রদীপ দে",
+      "amount": 20
+    },
+    {
+      "name": "রাজু মণ্ডল",
+      "amount": 20
+    },
+    {
+      "name": "বাপ্পা বিশ্বাস",
+      "amount": 20
+    },
+    {
+      "name": "পলাশ হালদার",
+      "amount": 20
+    },
+    {
+      "name": "সঞ্জয় দাস",
+      "amount": 20
+    },
+    {
+      "name": "মিঠুন দে",
+      "amount": 20
+    },
+    {
+      "name": "অনিক মণ্ডল",
+      "amount": 20
+    },
+    {
+      "name": "রনি বিশ্বাস",
+      "amount": 20
+    },
+    {
+      "name": "সুদীপ হালদার",
+      "amount": 20
+    },
+    {
+      "name": "রাহুল দাস",
+      "amount": 23
+    },
+    {
+      "name": "সুমন দে",
+      "amount": 23
+    },
+    {
+      "name": "অর্পণ মণ্ডল",
+      "amount": 23
+    },
+    {
+      "name": "শুভম বিশ্বাস",
+      "amount": 23
+    },
+    {
+      "name": "তাপস হালদার",
+      "amount": 23
+    },
+    {
+      "name": "অভিজিৎ দাস",
+      "amount": 23
+    },
+    {
+      "name": "সৌরভ দে",
+      "amount": 23
+    },
+    {
+      "name": "কৌশিক মণ্ডল",
+      "amount": 23
+    },
+    {
+      "name": "অমিত বিশ্বাস",
+      "amount": 23
+    },
+    {
+      "name": "দেবাশিস হালদার",
+      "amount": 23
+    },
+    {
+      "name": "সায়ন দাস",
+      "amount": 23
+    },
+    {
+      "name": "প্রদীপ দে",
+      "amount": 23
+    },
+    {
+      "name": "রাজু মণ্ডল",
+      "amount": 23
+    },
+    {
+      "name": "বাপ্পা বিশ্বাস",
+      "amount": 23
+    },
+    {
+      "name": "পলাশ হালদার",
+      "amount": 23
+    },
+    {
+      "name": "সঞ্জয় দাস",
+      "amount": 23
+    },
+    {
+      "name": "মিঠুন দে",
+      "amount": 23
+    },
+    {
+      "name": "অনিক মণ্ডল",
+      "amount": 23
+    },
+    {
+      "name": "রনি বিশ্বাস",
+      "amount": 23
+    },
+    {
+      "name": "সুদীপ হালদার",
+      "amount": 23
+    },
+    {
+      "name": "রাহুল দাস",
+      "amount": 27
+    },
+    {
+      "name": "সুমন দে",
+      "amount": 27
+    },
+    {
+      "name": "অর্পণ মণ্ডল",
+      "amount": 27
+    },
+    {
+      "name": "শুভম বিশ্বাস",
+      "amount": 27
+    },
+    {
+      "name": "তাপস হালদার",
+      "amount": 27
+    },
+    {
+      "name": "অভিজিৎ দাস",
+      "amount": 27
+    },
+    {
+      "name": "সৌরভ দে",
+      "amount": 27
+    },
+    {
+      "name": "কৌশিক মণ্ডল",
+      "amount": 27
+    },
+    {
+      "name": "অমিত বিশ্বাস",
+      "amount": 27
+    },
+    {
+      "name": "দেবাশিস হালদার",
+      "amount": 27
+    },
+    {
+      "name": "সায়ন দাস",
+      "amount": 27
+    },
+    {
+      "name": "প্রদীপ দে",
+      "amount": 27
+    },
+    {
+      "name": "রাজু মণ্ডল",
+      "amount": 27
+    },
+    {
+      "name": "বাপ্পা বিশ্বাস",
+      "amount": 27
+    },
+    {
+      "name": "পলাশ হালদার",
+      "amount": 27
+    },
+    {
+      "name": "সঞ্জয় দাস",
+      "amount": 27
+    },
+    {
+      "name": "মিঠুন দে",
+      "amount": 27
+    },
+    {
+      "name": "অনিক মণ্ডল",
+      "amount": 27
+    },
+    {
+      "name": "রনি বিশ্বাস",
+      "amount": 27
+    },
+    {
+      "name": "সুদীপ হালদার",
+      "amount": 27
+    }
+  ],
+  "schemaVersion": 1
+}
