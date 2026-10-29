@@ -1,59 +1,12 @@
-# দুর্গা সমিতি — এক-HTML ডেমো ও আলাদা ডেটা ফাইল
+# দুর্গা সমিতি ওয়েবসাইট
 
-## ফাইলের কাঠামো
-- `index.html` — সব HTML, CSS ও JavaScript একই ফাইলে। লগইন, প্রোফাইল, ড্যাশবোর্ড, সদস্য, চ্যাট, গ্যালারি, বিল, রিপোর্ট, সেটিংস ও JSON ব্যাকআপ।
-- `data.json` — আলাদা প্রাথমিক ডেটা ফাইল; সদস্য, ছবি-পাথ, সেটিংস, ২০২৪–২০২৬ সালের হিসাব, চ্যাট, কাস্টম ফিল্ড ও ৬০ জনের নমুনা পাড়া-চাঁদা।
-- `assets/durga-samiti-logo.png` — সমিতির লোগো।
-- `assets/member-sayan.jpg`, `assets/member-swastik.jpg` — দেওয়া দুটি নমুনা সদস্যের ছবি।
+বাংলা responsive website. মূল UI `index.html`-এ; demo records `data.json`-এ। `config.js`-এ public Supabase configuration এবং `api.js`-এ helper functions রয়েছে।
 
 ## চালানো
-1. ZIP Extract করুন।
-2. অনলাইনে চালাতে `index.html`, `data.json` এবং `assets/` একই repository/root folder-এ আপলোড করুন। GitHub Pages-এ `index.html` মূল ফোল্ডারে রাখুন।
-3. `index.html` সরাসরি ফোন/কম্পিউটারে খুললেও embedded demo data দিয়ে চলবে। ব্রাউজারের নিরাপত্তার কারণে `file://` থেকে `data.json` সরাসরি fetch করা যায় না; তাই এই ক্ষেত্রে embedded starter data ব্যবহার হয়।
-4. প্রথমবার HTTP/HTTPS-এ খুললে, ওই ব্রাউজারের Local Storage ফাঁকা থাকলে `data.json` থেকে প্রাথমিক ডেটা লোড হবে। একবার Local Storage-এ ডেটা তৈরি হলে পরের পরিবর্তনগুলো Local Storage-এ থাকবে। `data.json` নিজে থেকে পরিবর্তিত হয় না।
+GitHub Pages-এর root-এ `index.html`, `config.js`, `api.js`, `data.json` ও ছবি রাখুন। Supabase Publishable Key বসানোর নিয়ম `SUPABASE_SETUP_BN.md`-এ আছে।
 
-## ডেমো লগইন
-- অ্যাডমিন নাম: `আকাশ কর্মকার`
-- অ্যাডমিন ID: `DUR@900`
-- পাসওয়ার্ড: `password`
-- সেটিংস পাসওয়ার্ড: `AK@2026#`
-- সদস্য উদাহরণ: `সায়ন কোলে` / `DUR002` / `Durga@1002`
-- `সস্তিক কর্মকার` / `DUR003` / `Durga@1003`
+## বর্তমান অবস্থা
+এই প্রকল্পে UI এখনও LocalStorage demo flow ব্যবহার করে। Edge Function health-check কাজ করা মানে members/contributions/expenses/gallery/chat স্বয়ংক্রিয়ভাবে sync হচ্ছে না। Supabase Auth token ও RLS-backed CRUD wiring সম্পূর্ণ করতে হবে। Production login হিসেবে demo password ব্যবহার করবেন না।
 
-লগইন সফল হলে সংশ্লিষ্ট সদস্যের প্রোফাইল প্রথমে খুলবে। উপরের লোগোতে ক্লিক করলে সাইডবার খুলবে/বন্ধ হবে।
-
-## ডেটা সম্পাদনা ও ব্যাকআপ
-- অ্যাডমিন সেটিংস ও সদস্য তালিকা থেকে সদস্যের নাম, ID, ছবি, জন্মতারিখ, দায়িত্ব, চাঁদা ও সক্রিয় অবস্থা সম্পাদনা করতে পারবেন।
-- ছবি আপলোড Local Storage-এ Data URL হিসেবে সংরক্ষিত হয়। বড় ছবি আপলোড না করাই ভালো; ডেমোতে ১.৫ MB সীমা আছে।
-- `ডেটা ব্যাকআপ` পেজ থেকে JSON Export/Import করুন। ইমপোর্ট করার আগে ব্যাকআপ রাখুন।
-- `data.json` পরিবর্তন করে পরবর্তী নতুন ব্রাউজার/নতুন ডেমো শুরু করা যায়; বিদ্যমান Local Storage-এ পুরোনো ডেটা থাকলে তা অগ্রাধিকার পাবে। নতুন JSON লোড করতে চাইলে সাইটের Local Storage পরিষ্কার করুন বা JSON Import ব্যবহার করুন।
-
-## আর্থিক ডেটা সম্পর্কে
-- সদস্যদের দেওয়া চাঁদার মান, ২০২৫ সালের খরচ/সংগ্রহ এবং ২০২৪ ও ২০২৬ সালের নমুনা রেকর্ড রাখা হয়েছে।
-- পাড়া থেকে ৬০টি নমুনা চাঁদার যোগফল ₹১,৪০০। এগুলো বাস্তব যাচাইকৃত ব্যক্তির তথ্য নয়।
-- ২০২৪ ও ২০২৬ সালের অতিরিক্ত রেকর্ড উদাহরণ/নমুনা; প্রকৃত হিসাব ব্যবহারের আগে যাচাই করে নিন।
-- একই আয়/খরচ রেকর্ড একবারই গণনা করা হবে; আয় ও খরচ আলাদা।
-
-## নিরাপত্তা ও ভবিষ্যৎ Supabase
-এটি Local Storage-ভিত্তিক ডেমো, নিরাপদ production authentication নয়। HTML/JavaScript-এ থাকা ডেমো পাসওয়ার্ড গোপন নয়। বাস্তব ব্যবহারে Supabase Auth, database tables, Storage এবং Row Level Security (RLS) দিয়ে প্রতিটি পরিবর্তনের অনুমতি সার্ভার-সাইডে যাচাই করতে হবে। `service_role` key কখনো client-side HTML/JavaScript-এ রাখবেন না। `data.json`-কে Supabase-এ আপলোড করলেই database তৈরি হয় না; schema, import, Auth এবং RLS আলাদাভাবে তৈরি করতে হবে।
-
-## আপডেট: Bills ও পাড়ার লোকের চাঁদা
-- Bills পেজে তিনটি বিভাগ যোগ করা হয়েছে: সদস্যদের চাঁদা, দশকর্মা/অন্যান্য দায়িত্ব, এবং অন্যান্য আয়-খরচ।
-- “পাড়ার লোকের চাঁদা” বাটনে ক্লিক করলে আলাদা তালিকা খুলবে; অ্যাডমিন নতুন নাম, চাঁদা ও তারিখ যোগ বা বিদ্যমান রেকর্ড সম্পাদনা করতে পারবেন।
-- হিসাব ও পরিবর্তন Local Storage-এ সংরক্ষিত হয়। JSON ফাইলটি প্রাথমিক ডেটা; ব্রাউজার থেকে সরাসরি JSON ফাইলে পরিবর্তন লেখা যায় না।
-- এই সংস্করণটি ডেমো প্রকল্প; অনলাইন বহু-ব্যবহারকারী সংরক্ষণের জন্য ব্যাকএন্ড/ডেটাবেস লাগবে।
-
-## হিসাবের তিন-কলামের তালিকা ও এডিট
-- সদস্যদের চাঁদা তালিকায় তারিখ, সদস্যের নাম ও চাঁদা দেখা যায়।
-- দশকর্মা ও অন্যান্য দায়িত্ব তালিকায় তারিখ, সদস্যের নাম ও দায়িত্ব দেখা যায়।
-- অন্যান্য আয় ও খরচ তালিকায় তারিখ, কোথা থেকে এসেছে/কে দিয়েছে এবং টাকার পরিমাণ/বিবরণ দেখা যায়।
-- অ্যাডমিন লগইন থাকলে প্রতিটি রেকর্ডের পাশে এডিট বোতাম দেখা যায়; ফর্মে পরিবর্তন করে সংরক্ষণ করা যায়।
-
-## Bug fixes in this revision
-- Member dues category now uses explicit category classification and keeps exactly three visible columns: member name, date, and dues. Admin edit controls are placed inside the dues cell so they do not create a fourth column.
-- New accounting records include a category selector so member dues can be saved as member dues rather than duties/other expenses.
-- Neighborhood contribution edit controls are bound after the list is rendered; the add/edit forms include working cancel controls.
-- Add-transaction and gallery-upload forms include cancel controls.
-- Member login IDs can be edited by an admin from Settings → Member management → Edit member. New/updated IDs must be exactly 10 digits (mobile number). Existing demo IDs need to be changed to mobile numbers before they can be saved in the member editor.
-
-Note: this remains a localStorage demo build; Supabase sync is not yet integrated.
+## নিরাপত্তা
+কোনো `service_role` বা secret key browser-এ দেবেন না। `SUPABASE_SETUP_BN.md` এবং `SECURITY.md` পড়ুন।
