@@ -1,15 +1,12 @@
-# দুর্গা সমিতি — Supabase Database Edition
+# দুর্গা সমিতি ওয়েবসাইট
 
-বাংলা responsive website starter. অ্যাপের business data browser storage বা `data.json`-এ নয়, Supabase Database-এ থাকে। লগইন ফর্মে সদস্য ID ও পাসওয়ার্ড ব্যবহার করা হয়; Supabase Auth-এর ইমেলটি ব্যাকএন্ডে অভ্যন্তরীণভাবে ম্যাপ করা হয়।
+বাংলা responsive website. মূল UI `index.html`-এ; demo records `data.json`-এ। `config.js`-এ public Supabase configuration এবং `api.js`-এ helper functions রয়েছে।
 
-## শুরু করার আগে
-1. `config.js`-এ Project URL ও Publishable key যাচাই করুন। `service_role` key সেখানে দেবেন না।
-2. `SUPABASE_SETUP_BN.md` পড়ুন। Edge Function-এর কোড Supabase Dashboard-এ আলাদাভাবে deploy এবং Secrets সেট করতে হবে।
-3. প্রতিটি `public.members.id`-এর জন্য একই UUID-র Supabase Auth user থাকতে হবে। `member_id`-ই লগইন ID।
-4. টেবিল ও RLS policies আপনার বর্তমান schema-র সঙ্গে মিলিয়ে নিন।
+## চালানো
+GitHub Pages-এর root-এ `index.html`, `config.js`, `api.js`, `data.json` ও ছবি রাখুন। Supabase Publishable Key বসানোর নিয়ম `SUPABASE_SETUP_BN.md`-এ আছে।
 
-## GitHub Pages
-Root-এ `index.html`, `app.js`, `config.js`, `durga-samiti-logo.png` রাখুন। Commit করার পরে GitHub Pages deploy শেষ হলে সাইট রিফ্রেশ করুন।
+## বর্তমান অবস্থা
+এই প্রকল্পে UI এখনও LocalStorage demo flow ব্যবহার করে। Edge Function health-check কাজ করা মানে members/contributions/expenses/gallery/chat স্বয়ংক্রিয়ভাবে sync হচ্ছে না। Supabase Auth token ও RLS-backed CRUD wiring সম্পূর্ণ করতে হবে। Production login হিসেবে demo password ব্যবহার করবেন না।
 
 ## নিরাপত্তা
-কোনো Secret/service-role key ব্রাউজার বা GitHub-এ রাখবেন না। লগইন সেশন শুধু মেমরিতে থাকে; রিফ্রেশের পর আবার লগইন করতে হবে।
+কোনো `service_role` বা secret key browser-এ দেবেন না। `SUPABASE_SETUP_BN.md` এবং `SECURITY.md` পড়ুন।

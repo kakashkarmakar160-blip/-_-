@@ -1,38 +1,30 @@
-# দুর্গা সমিতি — Database-only সেটআপ (বাংলা)
+# দুর্গা সমিতি — Supabase সেটআপ (বাংলা)
 
-## এই ZIP-এ কী বদলেছে
-- লগইন স্ক্রিনে ইমেলের বদলে **সদস্য ID + পাসওয়ার্ড** চাওয়া হয়।
-- সদস্য/চাঁদা/খরচ/গ্যালারি/চ্যাট ডেটা Supabase Database থেকে পড়ে/লেখে।
-- অ্যাপের ডেটা, লগইন সেশন `localStorage`, `sessionStorage` বা `data.json`-এ রাখা হয় না। রিফ্রেশ করলে আবার লগইন করতে হবে।
-- ব্রাউজারে `service_role` বা Secret key রাখা হয়নি।
+## এই ZIP-এ কী ঠিক করা হয়েছে
+- `index.ts`-এর GET health-check খালি JSON parse করে না; CORS OPTIONS এবং পরিষ্কার JSON error response আছে।
+- POST অনুরোধে Supabase Auth user যাচাই হয়। এই Function ইচ্ছাকৃতভাবে এখনও কোনো টেবিলে insert/update/delete করে না।
+- `config.js`-এ আপনার Project URL ও Edge Function URL বসানো আছে। Publishable Key বসাতে হবে।
+- `api.js`-এ সংযোগ পরীক্ষা এবং Auth access token-সহ REST SELECT helper আছে।
+- `package.json`-এর server script ঠিক করা হয়েছে।
 
-## ১. config.js
-`publishableKey`-এ নিজের Supabase Dashboard → Project Settings → API Keys-এর **Publishable key** বসান। `service_role`/Secret key এখানে কখনো বসাবেন না।
+## গুরুত্বপূর্ণ সীমাবদ্ধতা
+বর্তমান `index.html` এখনও নিজস্ব demo/localStorage login এবং data structure ব্যবহার করে। এই ZIP-এ সদস্য, চাঁদা, খরচ, চ্যাট ও গ্যালারির সম্পূর্ণ Supabase sync দাবি করা হচ্ছে না। Supabase Auth-এ প্রতিটি সদস্যের লগইন অ্যাকাউন্ট এবং `members.id`-এর Auth UUID মিলিয়ে তারপর UI-কে API-তে যুক্ত করতে হবে। শুধু Edge Function health-check সফল হওয়া database sync-এর প্রমাণ নয়।
 
-## ২. Edge Function কোড আপডেট
-এই ফাইলটি Supabase-এ deploy করতে হবে:
-`supabase/functions/durga-samiti-api/index.ts`
+## Publishable Key বসানো
+1. Supabase Dashboard → Project Settings → API Keys খুলুন।
+2. শুধু Publishable key (`sb_publishable_...`) বা পুরনো `anon` public key কপি করুন।
+3. `config.js`-এর `PASTE_YOUR_SUPABASE_PUBLISHABLE_KEY_HERE` বদলান।
+4. কখনও `service_role`, `sb_secret_...` বা অন্য secret key browser code/GitHub-এ দেবেন না।
+5. `config.js`-এর তথ্য public repository-তে থাকলে key-টিকে public key হিসেবেই ধরুন এবং RLS ঠিক রাখুন।
 
-Supabase Dashboard → Edge Functions → `durga-samiti-api` → Code-এ এই ফাইলের সম্পূর্ণ কোড বসিয়ে Deploy করুন। `config.toml`-এ login endpoint-এর জন্য `verify_jwt = false` রাখা হয়েছে, কারণ লগইনের আগে JWT থাকে না। Function নিজে শুধু `action=login` গ্রহণ করে।
+## Edge Function deploy
+Supabase Dashboard → Edge Functions → `durga-samiti-api` → Code-এ `index.ts`-এর কোড বসিয়ে Deploy updates করুন। GET health-check লগইন ছাড়াই কেবল function চলার অবস্থা জানায়। POST-এ valid Supabase Auth access token লাগবে।
 
-## ৩. Edge Function Secrets
-Supabase Dashboard → Edge Functions → Secrets-এ এই তিনটি secret থাকতে হবে:
-- `SUPABASE_URL` — Project URL
-- `SUPABASE_ANON_KEY` অথবা `SUPABASE_PUBLISHABLE_KEY` — Publishable/anon key
-- `SUPABASE_SERVICE_ROLE_KEY` — Project-এর Secret/service-role key
+## GitHub Pages
+`index.html`, `config.js`, `api.js`, `data.json`, ছবি ও অন্যান্য assets একই root folder-এ রাখুন। মনে রাখবেন: `index.html`-এ `api.js` helper যোগ করলেই স্বয়ংক্রিয় sync চালু হয় না; UI-র প্রতিটি data action-কে helper/secure backend-এ সংযুক্ত করতে হবে।
 
-**গুরুত্বপূর্ণ:** `SUPABASE_SERVICE_ROLE_KEY` শুধু Supabase Edge Function Secrets-এ থাকবে; GitHub, `config.js`, HTML বা ব্রাউজারে কখনো নয়।
-
-## ৪. সদস্য ID দিয়ে লগইন কীভাবে কাজ করে
-প্রত্যেক সদস্যের জন্য Supabase Authentication-এ একটি Auth user থাকতে হবে এবং তার UUID অবশ্যই `public.members.id`-এর সঙ্গে মিলতে হবে। `public.members.member_id`-এ যে ID আছে, সেটিই লগইন স্ক্রিনে ব্যবহার করবে। Auth user-এর ইমেলটি ব্যাকএন্ডে অভ্যন্তরীণভাবে ব্যবহৃত হয়; সদস্যকে লগইন স্ক্রিনে ইমেল লিখতে হয় না।
-
-ইমেল confirmation/verification চালু না রাখতে চাইলে Supabase Dashboard → Authentication → Sign In / Providers → Email-এ **Confirm email** বন্ধ করুন (ড্যাশবোর্ডের লেবেল বদলাতে পারে)। এটি বন্ধ করলেও Auth user তৈরি থাকা এবং UUID মিল থাকা আবশ্যক।
-
-## ৫. Database/RLS
-বর্তমান টেবিলগুলো ও `public.is_current_user_admin()` ফাংশন আগে থেকেই থাকতে হবে। `supabase-policies.sql`-এ থাকা নীতিগুলো বর্তমান স্কিমার জন্য; স্কিমা আলাদা হলে অন্ধভাবে চালাবেন না।
-
-## ৬. GitHub Pages
-`index.html`, `app.js`, `config.js`, `durga-samiti-logo.png` এবং প্রয়োজনীয় ছবি রিপোজিটরির root-এ রাখুন। Supabase Edge Function কোড আলাদাভাবে Supabase-এ deploy করতে হবে; শুধু GitHub-এ ফাইল আপলোড করলেই Edge Function আপডেট হয় না।
-
-## সীমাবদ্ধতা
-এই ZIP বর্তমান Database-only starter UI-কে ঠিক করে; এটি পুরোনো Local Storage-ভিত্তিক সব স্ক্রিন/ফিচারের হুবহু পুনর্নির্মাণ নয়। নতুন সদস্যের Auth user তৈরি করা এখনও Supabase Dashboard বা নিরাপদ admin workflow থেকে করতে হবে।
+## নিরাপত্তা
+- LocalStorage-এ রাখা demo password production login নয়।
+- সব টেবিলে RLS চালু রাখুন এবং নীতিগুলো পরীক্ষা করুন।
+- `members`-এ ফোন/ব্যক্তিগত তথ্য থাকলে সব authenticated user-কে সব column দেখানোর আগে privacy বিবেচনা করুন।
+- production ব্যবহারের আগে Auth, member ID mapping, role changes, writes, Storage upload এবং audit logging আলাদা করে পরীক্ষা করুন।
