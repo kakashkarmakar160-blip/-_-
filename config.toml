@@ -1,4 +1,4 @@
 project_id = "durga-samiti"
 
 [functions.durga-samiti-api]
-verify_jwt = true
+verify_jwt = false
